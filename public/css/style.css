@@ -1,0 +1,26 @@
+* {
+    margin: auto;
+}
+
+body {
+    background-image : url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.md {
+    margin:0px;
+    padding-top: 3%;
+}
+
+.in {
+    margin:0px;
+}

@@ -1,0 +1,93 @@
+<%- include('header'); -%>
+
+<div class="container mx-6">
+    <div class="row row-cols-2 mt-2">
+      <div class="col-8 col-sm-4 my-5">
+           <h2 class="text-center">Temukan Arsitek </h2>
+           <h2 class="text-center">Desainer Terbaik Anda</h2>
+           <img src="images/logologin.png"alt="logologin.png"width="120%">
+      </div>
+      
+      <div class="col-8 col-sm-6 mt-5">
+        <div>
+            <h2 class="text-center">Register</h2>
+        </div>
+
+        <form class="g-3 shadow p-4 mt-4 bg-body rounded-3" method="post">
+           <div class="row g-3">
+            <div class="col-md-6">
+              <label for="namaDepan" class="form-label">Nama Depan</label>
+              <input name="firstName" type="text" class="form-control  border border-info" placeholder="Nama Depan">
+            </div>
+            <div class="col-md-6">
+              <label for="namaBelakang" class="form-label">Nama Belakang</label>
+              <input name="lastName"type="text" class="form-control  border border-info"placeholder="Nama Belakang">
+            </div>
+            <div class="col-md-8">
+              <label for="domisili" class="form-label">Domisili</label>
+              <input name="domisili"type="text" class="form-control  border border-info" placeholder="Ex Batang">
+            </div>
+            <div class="col-md-4">
+              <label for="inputZip" class="form-label">Gender</label>
+              <select nama="inputGender" class="form-select border border-info">
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input name="email"type="email" class="form-control  border border-info"  placeholder="xxx@gmail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input name="password" type="password" class="form-control  border border-info"placeholder="Ex Putxxxx">
+            </div>
+
+            <fieldset class="col-md-5 mb-1 mt-3">
+              <p>Daftar Sebagai :</p>
+              <div class="col-sm-12">
+                <div class="form-check">
+                  <input name="person" class="form-check-input border border-info" type="radio" name="gridRadios" id="gridRadios1" value="Pengguna">
+                  <label class="form-check-label" for="gridRadios1">
+                    Pengguna
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input border border-info" type="radio" name="gridRadios" id="gridRadios2" value="Arsitek">
+                  <label class="form-check-label" for="gridRadios2">
+                    Arsitek
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input border border-info" type="radio" name="gridRadios" id="gridRadios3" value="Desain Interior">
+                  <label class="form-check-label" for="gridRadios3">
+                    Desain Interior
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="col-md-7">
+              <label for="foto" class="form-label">Foto Profil</label>
+              <input type="file" class="form-control  border border-info" id="foto">
+            </div>
+
+                   
+            <div class="mt-5">
+                <div class="text-start float-start">
+                    <p>Sudah Punya Akun?<a href="/"><b>Login</b></a></p>
+                </div>
+
+                <div class="text-end">     
+                    <button type="submit" class="btn btn-info text-white">Daftar</button>
+                </div>
+            </div>
+                    
+           </div>
+          </form>
+      </div>
+     
+    </div>
+  </div>
+
+  <%- include('footer'); -%>
